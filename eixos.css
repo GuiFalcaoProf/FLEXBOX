@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: row; /* muda o eixo principal */
+    justify-content: center; /* agora é vertical */
+    align-items: center; /* agora é horizontal */
+    height: 100vh;
+}
+.item{
+    background-color: blue;
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+}

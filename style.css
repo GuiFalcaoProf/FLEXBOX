@@ -1,0 +1,55 @@
+/* Reset básico */
+body {
+    margin: 0; /* Remove margem padrão do navegador */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* CONTAINER (PAI) */
+.container {
+    display: flex; /* ATIVA O FLEXBOX (deixa os itens lado a lado) */
+
+    flex-direction: row; 
+    /* Define a direção:
+       row = linha (padrão)
+       column = coluna */
+
+    justify-content: center; 
+    /* Alinhamento HORIZONTAL:
+       center = centraliza
+       flex-start = esquerda
+       flex-end = direita
+       space-between = espaço entre eles
+       space-around = espaço ao redor */
+
+    align-items: center; 
+    /* Alinhamento VERTICAL:
+       center = meio
+       flex-start = topo
+       flex-end = baixo */
+
+    height: 100vh; /* Ocupa toda a altura da tela */
+
+    background-color: #222; /* Cor de fundo */
+}
+
+/* ITENS (FILHOS) */
+.item {
+    background-color: orange; /* Cor da caixa */
+
+    width: 120px; /* Largura */
+    height: 120px; /* Altura */
+
+    margin: 10px; /* Espaço externo entre caixas */
+
+    display: flex; 
+    /* Ativa flex dentro da caixa (pra centralizar o texto) */
+
+    justify-content: center; 
+    /* Centraliza o texto na horizontal */
+
+    align-items: center; 
+    /* Centraliza o texto na vertical */
+
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
